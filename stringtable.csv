@@ -1,0 +1,12 @@
+LANGUAGE,English,German
+STR_DIALOG_hunger,Hunger :,Hunger :
+
+STR_TEXT_adint_name,My name is %1.,Mein Name ist %1.
+STR_TEXT_adint_age,I'm %1 years old.,Ich bin %1 Jahre alt.
+STR_TEXT_adint_location,I'm living near %1.,Ich wohne in der Nähe von %1.
+STR_TEXT_adint_informations,%1,%1
+STR_TEXT_adint_medical,I need %1,Ich brauche %1
+STR_TEXT_adint_food,Food: %1,Food: %1
+STR_TEXT_adint_release,You have to release the person first.,Du musst die Person erst freilassen.
+STR_TEXT_adint_searchCanceled,Searching canceled.,Durchsuchen abgebrochen.
+STR_TEXT_adint_searchIsClear,You found nothing.,Du hast nichts gefunden.

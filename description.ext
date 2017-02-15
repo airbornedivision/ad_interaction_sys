@@ -1,0 +1,7 @@
+#include "functions.h"
+
+enableDebugConsole = 1;
+
+respawn = 3;
+respawndelay = 1;
+disabledAI=1;
