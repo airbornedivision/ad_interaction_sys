@@ -1,5 +1,5 @@
 /*
-Gets the distance position for sending a unit away from the player in eye direction
+Position fuer wegschicken berechnen. Blickrichtung Spieler + Distanz von 50-150m.
 
 Arguments :
 0: unit with the attached action

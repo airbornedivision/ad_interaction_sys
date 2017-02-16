@@ -1,5 +1,5 @@
 /*
-Plays an animation
+Animation abspielen.
 
 Arguments :
 0: Object with the variable [OBJECT]
@@ -18,4 +18,6 @@ _var = _this select 2;
 [[ _unit,_animation],"playMove",true] call BIS_fnc_MP;
 [[ _unit,_animation],"switchMove",true] call BIS_fnc_MP;
 
+/*
 [_unit,_var] call adint_fnc_effectIsDead;
+*/

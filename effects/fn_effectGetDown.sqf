@@ -1,5 +1,5 @@
 /*
-Forces a unit to get down
+Zwingt die Einheit sich hinzulegen.
 
 Arguments :
 0: unit with the attached action

@@ -1,5 +1,6 @@
 /*
-Sends unit away
+Einheit durchsuchen. 
+adint_isFriendly verhindert, dass es eine Reaktion auf durchsuchen gibt.
 
 Arguments :
 0: unit with the attached action
@@ -14,18 +15,13 @@ _unit = _this select 0;
 
 _handle = [] call adint_fnc_systemPerformSearch;
 
-if (_handle) then
-	{
+if (_handle) then {
 		[(localize "STR_TEXT_adint_searchIsClear"),false,2,0] spawn ace_common_fnc_displayText;
-	}
-	else
-	{
-		if ([_unit,"adint_isFriendly"] call adint_fnc_systemGetVariable) then
-			{}
-			else
-			{
-				switch (floor (random 10)) do
-					{
+	} else {
+		if ([_unit,"adint_isFriendly"] call adint_fnc_systemGetVariable) then {
+
+			} else {
+				switch (floor (random 10)) do {
 						case 1: { [_unit] spawn adint_fnc_effectAssasin };
 						case 2: { [_unit] call adint_fnc_effectFlee; };
 						case 3: { [_unit] call adint_fnc_effectFlee; };

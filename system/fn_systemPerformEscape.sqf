@@ -1,5 +1,7 @@
 /*
-Plays an animation
+Ergebnis fuer Flucht anhand von adint_escape berechnen.
+
+
 
 Arguments :
 0: Object with the variable [OBJECT]
@@ -18,14 +20,11 @@ _r = 0;
 
 /*Überprüfen, ob der angeforderte Befehl ausgeführt wird anhand von vergleich _f mit _r. Wenn adint_kindness = 0 dann ist _f immer grösser als _r und somit wird immer true zurückgegeben*/
 
-if (adint_escape != 1) then
-		{
+if (adint_escape != 1) then {
 			_f = 1 - adint_escape;
 			_r = random 1;
 			if (_f > _r) then {_escape = false};
-		}
-		else
-		{
+		} else {
 			_escape = true;
 		};
 

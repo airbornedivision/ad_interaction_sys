@@ -1,4 +1,5 @@
 /*
+Prueft ob Objekt noch am leben ist.
 Arguments :
 0: Object with attached Action
 
@@ -9,13 +10,10 @@ private ["_civ","_return"];
 
 _civ = _this select 0;
 
-if (alive _civ) then
-	{
-		_return = true;
-	}
-	else
-	{
-		_return = false;
-	};
+if (alive _civ) then {
+	_return = true;
+	} else {
+	_return = false;
+};
 	
 _return;

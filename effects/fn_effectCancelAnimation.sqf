@@ -1,5 +1,5 @@
 /*
-Plays an animation
+Animationen zuruecksetzen
 
 Arguments :
 0: Object with the variable [OBJECT]

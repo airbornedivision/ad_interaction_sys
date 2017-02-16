@@ -9,6 +9,9 @@ Return :
 // Variables for Informations
 // Answers for Informations
 
+// Beide Arrays muessen gleich groß sein, damit bei Sprachunterschieden keine unterschiedlichen bzw. keine Antwort erscheint.
+// Bei ungleicher groesse Fehlermeldung.
+
 adint_informations =
           [
             "I have no informations for you.",
@@ -60,15 +63,15 @@ switch (language) do {
         };
 };
 
+// WIP Checkpoint Tool - Nicht implementiert
 adint_vehdefined = [];
 adint_ext_vehclasses = [];
 adint_veh_classes = [];
-
 adint_vehsearchresult = 0.5;
 
-adint_defined = [];
-adint_ext_classes = [];
-adint_classes = ["LOP_Tak_Civ_Man_01","LOP_Tak_Civ_Man_02","LOP_Tak_Civ_Man_03","LOP_Tak_Civ_Man_04","Afghan_civilian1","Afghan_civilian1NH","Afghan_civilian2","Afghan_civilian2NH","Afghan_civilian3","Afghan_civilian3NH","Afghan_civilian4","Afghan_civilian5","Afghan_civilian6","Afghan_civilian6NH"];
+
+adint_defined = []; // Alle verwendeten Einheiten denen die Actions hinzugefuegt wurden.
+adint_ext_classes = ["LOP_Tak_Civ_Man_01","LOP_Tak_Civ_Man_02","LOP_Tak_Civ_Man_03","LOP_Tak_Civ_Man_04","Afghan_civilian1","Afghan_civilian1NH","Afghan_civilian2","Afghan_civilian2NH","Afghan_civilian3","Afghan_civilian3NH","Afghan_civilian4","Afghan_civilian5","Afghan_civilian6""Afghan_civilian6NH"]; // Klassen, die zu Missionsbegin nicht vorhanden sind, aber ggf nachgespawnt werden.
 
 adint_kindness = 0; // Kindness of the civilians 0-1 // 0 - friendly 1 - hateful // Effects the civilian reactions to given instructions //
 adint_escape = 0; // Chance auf Flucht der AI nach Stopp Instruktion

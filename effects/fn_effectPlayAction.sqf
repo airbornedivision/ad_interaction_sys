@@ -1,5 +1,5 @@
 /*
-Sends unit away
+Spiel eine Aktion ab.
 
 Arguments :
 0: unit that should play the action

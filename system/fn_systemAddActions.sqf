@@ -1,5 +1,5 @@
 /*
-Adds Action entries to a class.
+Fuegt der uebergebenen Klasse eine ACE Aktion hinzu
 
 Arguments :
 0 : classname of the object

@@ -1,5 +1,5 @@
 /*
-Searched person attacks all units around him.
+Durchsuchte Einheit zieht eine Waffe und feuert auf alle Einheiten im Nahbereich.
 
 Arguments :
 0: Searched person
@@ -14,23 +14,23 @@ _victim = objNull;
 _targets = [];
 _weapon = [];
 
-if ([_unit,"adint_isArrested"] call adint_fnc_systemGetVariable) then
-	{
-		// WAFFE GEFUNDEN WAFFE DROPPEN UND INFOTEXT
+if ([_unit,"adint_isArrested"] call adint_fnc_systemGetVariable) then {
+		// WAFFE GEFUNDEN WAFFE DROPPEN UND INFOTEXT // TODO WAFFE DROPPEN
 		hint "waffe gefunden";
-	}
-	else
-	{
+	} else {
 		[_unit] call adint_fnc_systemResetVars;
-		_weapon = adint_weapons select (floor (random count adint_weapons));
 
+		// Waffe aus Pool auswaehlen und mit Munition zuweisen.
+		_weapon = adint_weapons select (floor (random count adint_weapons));
 		_unit addMagazineGlobal (_weapon select 1);
 		_unit addWeaponGlobal (_weapon select 0);
 
+		// Einheit einer EAST Fraktion zuweisen, um negativen Score zu verhindern. Ziele suchen und bekaempfen.
 		_enemygroup = createGroup east;
 		[_unit] join _enemygroup;
 		_targets = [_unit] call adint_fnc_systemNearestTargets;
 
+		// Zwingt die Einheit auch ohne fixes Ziel zu feuern. Falls Einheit nicht bekaempft wurde flieht sie im anschluss.
 		for [{_x=1},{_x<=(6 + (round random 3))},{_x=_x+1}] do
 			{
 				_victim = _targets select (floor (random (count _targets)));

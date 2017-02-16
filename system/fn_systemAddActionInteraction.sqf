@@ -1,5 +1,5 @@
 /*
-Adds interaction menu to unit
+Fuegt Aktions Aktionen hinzu
 
 Arguments :
 0: select unit from "systemInitCivlians" = only civilian side

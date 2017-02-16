@@ -1,5 +1,5 @@
 /*
-Forces a unit to stop
+Zwingt die Einheit zum halten.
 
 Arguments :
 0: unit with the attached action

@@ -1,5 +1,5 @@
 /*
-Searched person attacks all units around him.
+Flucht an Zufallsposition im Umkreis von 300-600m.
 
 Arguments :
 0: Searched person

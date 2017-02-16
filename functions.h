@@ -72,7 +72,6 @@ class CfgFunctions {
 			class systemInitServer {};
 			class systemInitClient {};
 			class systemSetData {};
-			class systemCheckData {};
 			class systemSetVariable {};
 			class systemIsInitialized {};
 			class systemGetVariable {};

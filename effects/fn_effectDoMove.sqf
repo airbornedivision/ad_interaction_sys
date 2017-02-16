@@ -1,5 +1,5 @@
 /*
-Set unit data if not done yet.
+Einheit an gegebene Position schicken.
 
 Arguments :
 0: Object with attached Action

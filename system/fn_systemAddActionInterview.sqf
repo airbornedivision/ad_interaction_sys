@@ -1,5 +1,5 @@
 /*
-Adds interview menu to unit
+Fuegt Interview Aktionen hinzu
 
 Arguments :
 0: select unit from "systemInitCivlians" = only civilian side

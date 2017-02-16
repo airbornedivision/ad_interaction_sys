@@ -1,5 +1,5 @@
 /*
-
+Pruefen ob Fluchtbedindungen erfuellt sind und anschliessende Flucht.
 Arguments :
 
 Return :
@@ -17,15 +17,13 @@ while {true} do
 		if (!([_unit,"adint_hasHandsUp"] call adint_fnc_systemGetVariable) && !([_unit,"adint_hasStopped"] call adint_fnc_systemGetVariable)) exitWith {};
 		if ([_unit,"adint_isArrested"] call adint_fnc_systemGetVariable) exitwith {hint "arrest"};
 // Überprüft ob sich noch Einheiten von West,East oder Ind in der Nähe befinden. Wenn nein dann weitergehen
-		if ([_unit] call adint_fnc_systemNoNearestInstructor) exitWith
-			{
+		if ([_unit] call adint_fnc_systemNoNearestInstructor) exitWith {
 				[_unit] call adint_fnc_interactionSetFree;
 			};
 
 // Zufällige Flucht des Gefangenen ahnand der "adint_escape" Variable 0 = keine Flucht ; 1 = Flucht
 		_handle = [] call adint_fnc_systemPerformEscape;
-		if (_handle) then
-			{
+		if (_handle) then {
 				[_unit] call adint_fnc_effectFlee;
 			};
 	};

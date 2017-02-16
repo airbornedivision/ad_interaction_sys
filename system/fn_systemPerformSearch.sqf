@@ -1,5 +1,5 @@
 /*
-Reaction of unit after checking inventory
+Ergebnis fuer Durchsuchung anhand von adint_searchresult berechnen.
 
 Arguments :
 0: Object with the variable [OBJECT]
@@ -11,18 +11,17 @@ BOOL
 Example:
 [_this select 0,"adint_Name"] call adint_fnc_systemGetVariable;
 */
-private ["_f","_r","_instruction","_return"];
-_instruction = false;
+private ["_f","_r","_result","_return"];
+_result = false;
 _f = 0;
 _r = 0;
 
-if (adint_searchresult != 1) then
-		{
+if (adint_searchresult != 1) then {
 			_f = 1 - adint_searchresult;
 			_r = random 1;
-			if (_f > _r) then {_instruction = true};
+			if (_f > _r) then {_result = true};
 		};
 
-_return = _instruction;
+_return = _result;
 
 _return;

@@ -1,5 +1,5 @@
 /*
-Forces Unit to put his hands up
+Zwingt die Einheit die Haende hochzunehmen.
 
 Arguments :
 0: unit with the attached action

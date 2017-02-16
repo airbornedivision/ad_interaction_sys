@@ -1,5 +1,5 @@
 /*
-Cancels animation if unit has hands up and died
+Bricht Animtaionen ab wenn die Einheit getoetet wurde.
 
 Arguments :
 0: unit with the attached action
@@ -15,8 +15,7 @@ _var = _this select 1;
 /*
 waitUntil {((!alive _unit) || (!([_unit,_var] call adint_fnc_systemGetVariable)))};
 
-if (!alive _unit) then
-	{
+if (!alive _unit) then {
 		[_unit,"AidlPpneMstpSnonWnonDnon_SleepB_death"] call adint_fnc_effectPlayAnimation;
 		[_unit,_var,false,true] call adint_fnc_systemSetVariable;
 		[_unit,"Move"] call adint_fnc_effectEnableAi;

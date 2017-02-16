@@ -1,5 +1,5 @@
 /*
-Enables units ai
+AI aktivieren
 
 Arguments :
 0: unit with the attached action

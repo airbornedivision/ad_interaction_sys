@@ -1,5 +1,5 @@
 /*
-Sets all Variables to false
+Alle Aktionsvariablen zuruecksetzen, sobald die Einheit freigelassen wird.
 
 Arguments :
 0: unit with the attached action

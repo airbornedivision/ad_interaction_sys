@@ -1,5 +1,6 @@
 /*
-Set the stance of a unit
+Setzt die Haltung einer Einheit - Stehen - geduckt - liegend
+Deaktiviert die AI damit die Haltung bleibt.
 
 Arguments :
 0: unit with the attached action
