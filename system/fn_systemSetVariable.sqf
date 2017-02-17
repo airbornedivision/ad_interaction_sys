@@ -15,8 +15,8 @@ Example:
 private ["_unit","_var","_value","_global"];
 
 _unit = param [0,objNull];
-_var = param ["","",""];
-_value = param [0,0];
+_var = param [1,""];
+_value = param [2,0];
 _global = param [3,false];
 
 _unit setVariable [_var, _value, _global];

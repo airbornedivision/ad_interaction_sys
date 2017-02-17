@@ -13,54 +13,51 @@ Return :
 // Bei ungleicher groesse Fehlermeldung.
 
 adint_informations =
-          [
-            "I have no informations for you.",
-            "Leave me alone.",
-            "I don't talk to you.",
-            "Go away !",
-            "Let us take a selfie.",
-            "You are ugly.",
-            "Why can't we live in peace.",
-            "Do you have money for me ?",
-            "It's so boring.",
-            "It's a nice day.",
-            "I don't want to live here anymore.",
-            "I hate america. Go away!",
-            "Can i have your gun ?",
-            "It's so hot today.",
-            "Do you want to buy a goat ?"
-          ];
+    [
+      "I have no informations for you.",
+      "Leave me alone.",
+      "I don't talk to you.",
+      "Go away !",
+      "Let us take a selfie.",
+      "You are ugly.",
+      "Why can't we live in peace.",
+      "Do you have money for me ?",
+      "It's so boring.",
+      "It's a nice day.",
+      "I don't want to live here anymore.",
+      "I hate america. Go away!",
+      "Can i have your gun ?",
+      "It's so hot today.",
+      "Do you want to buy a goat ?"
+    ];
 
 switch (language) do {
-    case "English" :
-				{
+    case "English" : {
 					adint_informations;
 				};
-    case "German" :
-				{
-					adint_informations =
-										[
-											"Ich habe keine Informationen f�r dich.",
-											"Lass mich in Ruhe.",
-											"Ich spreche nicht mit euch.",
-											"Geh weg.",
-											"Lass uns ein Selfie machen.",
-											"Du bist aber haesslich.",
-											"Warum koennen wir nicht in Frieden leben.",
-											"Hast du Geld fuer mich ?",
-											"Es ist so langweilig hier.",
-											"Schoenes Wetter heute.",
-											  "Ich will hier nicht mehr leben.",
-											  "Ich hasse Amerika. Haut ab.",
-											  "Kann ich deine Waffe haben ?",
-											  "Es ist so heiß heute.",
-											  "Willst du eine Ziege kaufen ?"
-										];
+    case "German" : {
+        adint_informations =
+            [
+              "Ich habe keine Informationen f�r dich.",
+              "Lass mich in Ruhe.",
+              "Ich spreche nicht mit euch.",
+              "Geh weg.",
+              "Lass uns ein Selfie machen.",
+              "Du bist aber haesslich.",
+              "Warum koennen wir nicht in Frieden leben.",
+              "Hast du Geld fuer mich ?",
+              "Es ist so langweilig hier.",
+              "Schoenes Wetter heute.",
+                "Ich will hier nicht mehr leben.",
+                "Ich hasse Amerika. Haut ab.",
+                "Kann ich deine Waffe haben ?",
+                "Es ist so heiß heute.",
+                "Willst du eine Ziege kaufen ?"
+            ];
 				};
-    default
-        {
-          adint_informations;
-        };
+    default {
+        adint_informations;
+    };
 };
 
 // WIP Checkpoint Tool - Nicht implementiert

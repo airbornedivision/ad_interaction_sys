@@ -19,9 +19,8 @@ if ([_unit,"adint_isArrested"] call adint_fnc_systemGetVariable) exitWith {hint 
 
 _handle = [] call adint_fnc_systemPerform;
 
-if (_handle) then
-	{
-		[_unit] call adint_fnc_interactionSetFree;
-		_position = [_unit,_caller] call adint_fnc_systemGetDistancePosition;
-		[_unit,_position] call adint_fnc_effectDoMove;
-	};
+if (_handle) then {
+	[_unit] call adint_fnc_interactionSetFree;
+	_position = [_unit,_caller] call adint_fnc_systemGetDistancePosition;
+	[_unit,_position] call adint_fnc_effectDoMove;
+};

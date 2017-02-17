@@ -19,6 +19,3 @@ waitUntil {_endtime < time};
 _return = true;
 
 _return;
-
-
-[{  }, 5, ["balls"] ] call CBA_fnc_addPerFrameHandler;

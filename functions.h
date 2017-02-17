@@ -2,14 +2,14 @@ class CfgFunctions {
 
 	class ADINT {
 
-	tag = "adint";
+		tag = "adint";
 
 		class player {
-			file = "player";
+			file = "\ad_interaction_sys\player";
 		};
 
 		class vehicle {
-			file = "vehicle";
+			file = "\ad_interaction_sys\vehicle";
 			class vehicleInit {};
 			class vehicleAddActions {};
 			class vehicleAddActionSearch {};
@@ -26,7 +26,7 @@ class CfgFunctions {
 		};
 
 		class effect {
-			file = "effects";
+			file = "\ad_interaction_sys\effects";
 			class effectHandsUp {};
 			class effectPlayAnimation {};
 			class effectIsDead {};
@@ -44,7 +44,7 @@ class CfgFunctions {
 		};
 
 		class functions {
-			file = "functions";
+			file = "\ad_interaction_sys\functions";
 			class functionEnableAi {};
 			class functionDoTarget {};
 			class functionDoMove {};
@@ -52,17 +52,17 @@ class CfgFunctions {
 		};
 
 		class objects {
-			file = "objects";
+			file = "\ad_interaction_sys\objects";
 		};
 
 		class call {
-			file = "call";
+			file = "\ad_interaction_sys\call";
 			class callStop {};
 			class callHandsUp {};
 		};
 
 		class system {
-			file = "system";
+			file = "\ad_interaction_sys\system";
 			class systemInit {};
 			class systemTypeOf {};
 			class systemAddActionInterview {};
@@ -91,11 +91,11 @@ class CfgFunctions {
 		};
 
 		class dialog {
-			file = "dialog\functions";
+			file = "\ad_interaction_sys\dialog\functions";
 		};
 
 		class interaction {
-			file = "interaction";
+			file = "\ad_interaction_sys\interaction";
 			class interactionSetFree {};
 			class interactionSearch {};
 			class interactionGiveFood {};
@@ -106,7 +106,7 @@ class CfgFunctions {
 		};
 
 		class instruction {
-			file = "instruction";
+			file = "\ad_interaction_sys\instruction";
 			class instructionHandsUp {};
 			class instructionGetDown {};
 			class instructionStop {};
@@ -114,7 +114,7 @@ class CfgFunctions {
 		};
 
 		class interview {
-			file = "interview";
+			file = "\ad_interaction_sys\interview";
 			class interviewName {};
 			class interviewAge {};
 			class interviewFood {};
@@ -126,9 +126,9 @@ class CfgFunctions {
 
 	class ADCP {
 
-	tag = "adcp";
+		tag = "adcp";
 		class checkpoint {
-			file = "checkpoint";
+			file = "\ad_interaction_sys\checkpoint";
 			class checkpointSpawnVehicle {};
 			class checkpointSpawnCrew {};
 			class checkpointSystemInit {};
@@ -138,6 +138,6 @@ class CfgFunctions {
 			class checkpointSendAway {};
 			class checkpointExitCheckpoint {};
 			class checkpointPassAction {};
-			};
 		};
 	};
+};
