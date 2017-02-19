@@ -31,8 +31,7 @@ if ([_unit,"adint_isArrested"] call adint_fnc_systemGetVariable) then {
 		_targets = [_unit] call adint_fnc_systemNearestTargets;
 
 		// Zwingt die Einheit auch ohne fixes Ziel zu feuern. Falls Einheit nicht bekaempft wurde flieht sie im anschluss.
-		for [{_x=1},{_x<=(6 + (round random 3))},{_x=_x+1}] do
-			{
+		for [{_x=1},{_x<=(6 + (round random 3))},{_x=_x+1}] do {
 				_victim = _targets select (floor (random (count _targets)));
 				[[_unit,_victim], "adint_fnc_functionDoTarget",true] call BIS_fnc_MP;
 				sleep 1.3;

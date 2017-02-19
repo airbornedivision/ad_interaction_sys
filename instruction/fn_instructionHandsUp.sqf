@@ -12,8 +12,7 @@ private ["_unit","_caller","_targets","_handle"];
 _unit = _this select 0;
 _caller = player;
 
-if ([_unit,"adint_hasHandsUp"] call adint_fnc_systemGetVariable) then
-{
+if ([_unit,"adint_hasHandsUp"] call adint_fnc_systemGetVariable) then {
 	
 } else {
 	_handle = [] call adint_fnc_systemPerform;

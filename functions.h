@@ -1,7 +1,6 @@
 class CfgFunctions {
 
 	class ADINT {
-
 		tag = "adint";
 
 		class player {
@@ -90,10 +89,6 @@ class CfgFunctions {
 			class systemNoNearestInstructor {};
 		};
 
-		class dialog {
-			file = "\ad_interaction_sys\dialog\functions";
-		};
-
 		class interaction {
 			file = "\ad_interaction_sys\interaction";
 			class interactionSetFree {};
@@ -125,7 +120,6 @@ class CfgFunctions {
 	};
 
 	class ADCP {
-
 		tag = "adcp";
 		class checkpoint {
 			file = "\ad_interaction_sys\checkpoint";
